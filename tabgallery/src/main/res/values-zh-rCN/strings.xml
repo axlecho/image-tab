@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TabGallery</string>
+    <string name="error_not_folder_path">非文件夹路径</string>
+    <string name="error_out_of_range">越界</string>
+    <string name="error_decoding_failed">解码失败</string>
+    <string name="error_reading_failed">读取失败</string>
+    <string name="error_unknown">奇怪的错误</string>
+    <string name="error_write_failed">写入失败</string>
+    <string name="error_socket">网络错误</string>
+    <string name="error_invalid_zip_file">无效 zip 文件</string>
+    <string name="error_not_found">未找到</string>
+    <string name="error_empty">空</string>
+</resources>
