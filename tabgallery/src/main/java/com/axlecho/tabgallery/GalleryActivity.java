@@ -19,6 +19,7 @@ import com.axlecho.tabgallery.provider.TabGalleryProvider;
 import com.axlecho.tabgallery.provider.GalleryProvider2;
 import com.axlecho.tabgallery.provider.ZipGalleryProvider;
 import com.axlecho.tabgallery.spider.SpiderDen;
+import com.axlecho.tabgallery.tools.GetText;
 import com.hippo.glgallery.GalleryProvider;
 import com.hippo.glgallery.GalleryView;
 import com.hippo.glgallery.SimpleAdapter;
@@ -64,6 +65,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
         onInit();
         mGalleryProvider.start();
         SpiderDen.initialize(this);
+        GetText.initialize(this);
         mGLRootView = (GLRootView) findViewById(R.id.gl_root_view);
         mGalleryAdapter = new GalleryAdapter(mGLRootView, mGalleryProvider);
         Resources resources = getResources();
