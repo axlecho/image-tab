@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">TabGallery</string>
     <string name="error_not_folder_path">非文件夹路径</string>
     <string name="error_out_of_range">越界</string>
     <string name="error_decoding_failed">解码失败</string>

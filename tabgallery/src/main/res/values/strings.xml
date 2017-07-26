@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">TabGallery</string>
     <string name="error_not_folder_path">Not folder path</string>
     <string name="error_out_of_range">Out of range</string>
     <string name="error_decoding_failed">Decoding failed</string>

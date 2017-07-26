@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">TabGallery</string>
     <string name="error_not_folder_path">非文件夾路徑</string>
 
 </resources>
