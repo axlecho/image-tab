@@ -24,9 +24,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    implementation  'com.github.seven332:beerbelly:0.1.4'
-    implementation  'com.github.seven332:glview-image:0.1.0'
-    implementation  project(':glview')
+    api  'com.github.seven332:beerbelly:0.1.4'
+    api  'com.github.seven332:glview-image:0.1.0'
+    api  project(':glview')
     testCompile 'junit:junit:4.12'
 }
 

@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.seven332'
+group = 'com.github.seven332'
 
 android {
     compileSdkVersion 23
@@ -24,10 +24,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    implementation  'com.github.seven332:tuxiang:0.1.2'
-    implementation  'com.github.seven332:yorozuya:0.1.2'
-    implementation  'com.github.seven332:yorozuya-thread:0.1.1'
-    implementation  'com.github.seven332:yorozuya-collect:0.1.4'
+    api 'com.github.seven332:tuxiang:0.1.2'
+    api 'com.github.seven332:yorozuya:0.1.2'
+    api 'com.github.seven332:yorozuya-thread:0.1.1'
+    api 'com.github.seven332:yorozuya-collect:0.1.4'
     testCompile 'junit:junit:4.12'
 }
 
@@ -38,7 +38,7 @@ task sourcesJar(type: Jar) {
 }
 
 task javadoc(type: Javadoc) {
-    failOnError  false
+    failOnError false
     source = android.sourceSets.main.java.sourceFiles
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
     classpath += configurations.compile
