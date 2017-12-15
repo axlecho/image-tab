@@ -1,1 +1,1 @@
-include ':app', ':tabgallery'
+include ':app', ':tabgallery', ':glview', ':glgallery'

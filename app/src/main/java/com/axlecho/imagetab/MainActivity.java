@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void startImageTab() {
         ImageTabInfo info = new ImageTabInfo();
         info.gid = 1231;
-        info.imgs = new String[]{"http://jts-attachment.oss-cn-hangzhou.aliyuncs.com/data/attachment/forum/201705/24/112640fra9fjc8acltlawm.gif@!tab_thumb",
-                "http://jts-attachment.oss-cn-hangzhou.aliyuncs.com/data/attachment/forum/201705/24/112641zx7jw8oaakzx2f22.gif@!tab_thumb",
-                "http://jts-attachment.oss-cn-hangzhou.aliyuncs.com/data/attachment/forum/201705/24/112642tsnnmwvkdmdzsjmn.gif@!tab_thumb"};
+        info.imgs = new String[]{"http://att.jitashe.org/data/attachment/pdfimg/241/241640/1.png",
+                "http://att.jitashe.org/data/attachment/pdfimg/241/241640/2.png",
+                "http://att.jitashe.org/data/attachment/pdfimg/241/241640/3.png"};
 
         Intent intent = new Intent();
         intent.setClass(this, GalleryActivity.class);

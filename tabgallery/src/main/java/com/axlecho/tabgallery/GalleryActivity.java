@@ -69,7 +69,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
         mGLRootView = (GLRootView) findViewById(R.id.gl_root_view);
         mGalleryAdapter = new GalleryAdapter(mGLRootView, mGalleryProvider);
         Resources resources = getResources();
-        int primaryColor = ResourcesUtils.getAttrColor(this, R.attr.colorPrimary);
+        int primaryColor = ResourcesUtils.getAttrColor(this, R.attr.colorAccent);
 
         mGalleryView = new GalleryView.Builder(this, mGalleryAdapter)
                 .setListener(this)
@@ -77,7 +77,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
                 .setScaleMode(GalleryView.SCALE_FIT)
                 .setStartPosition(GalleryView.START_POSITION_TOP_RIGHT)
                 .setStartPage(0)
-                .setBackgroundColor(resources.getColor(R.color.background))
+                .setBackgroundColor(resources.getColor(R.color.gallery_background))
                 .setEdgeColor(primaryColor & 0xffffff | 0x33000000)
                 .setPagerInterval(resources.getDimensionPixelOffset(R.dimen.gallery_pager_interval))
                 .setScrollInterval(resources.getDimensionPixelOffset(R.dimen.gallery_scroll_interval))

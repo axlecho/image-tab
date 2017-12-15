@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ImageTab.iml" filepath="$PROJECT_DIR$/ImageTab.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glgallery/glgallery.iml" filepath="$PROJECT_DIR$/glgallery/glgallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glview/glview.iml" filepath="$PROJECT_DIR$/glview/glview.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabgallery/tabgallery.iml" filepath="$PROJECT_DIR$/tabgallery/tabgallery.iml" />
     </modules>
   </component>
