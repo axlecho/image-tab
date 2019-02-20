@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.Light">
-
+    <style name="ImageTabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.FullScreen" parent="AppTheme.NoActionBar">
-        <item name="android:windowFullscreen">true</item>
-    </style>
-
-    <style name="AppTheme.NoActionBar" parent="AppTheme">
+    <style name="ImageTabTheme.NoActionBar" parent="ImageTabTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ImageTabTheme.FullScreen" parent="ImageTabTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>
