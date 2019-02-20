@@ -10,13 +10,12 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 
 import com.axlecho.tabgallery.provider.DirGalleryProvider;
-import com.axlecho.tabgallery.provider.TabGalleryProvider;
 import com.axlecho.tabgallery.provider.GalleryProvider2;
+import com.axlecho.tabgallery.provider.TabGalleryProvider;
 import com.axlecho.tabgallery.provider.ZipGalleryProvider;
 import com.axlecho.tabgallery.spider.SpiderDen;
 import com.axlecho.tabgallery.tools.GetText;
@@ -69,8 +68,8 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
         mGLRootView = (GLRootView) findViewById(R.id.gl_root_view);
         mGalleryAdapter = new GalleryAdapter(mGLRootView, mGalleryProvider);
         Resources resources = getResources();
-        int primaryColor = ResourcesUtils.getAttrColor(this, R.attr.colorAccent);
-
+        // int primaryColor = ResourcesUtils.getAttrColor(this, R.attr.colorAccent);
+        int primaryColor = resources.getColor(R.color.colorAccent);
         mGalleryView = new GalleryView.Builder(this, mGalleryAdapter)
                 .setListener(this)
                 .setLayoutMode(GalleryView.LAYOUT_TOP_TO_BOTTOM)

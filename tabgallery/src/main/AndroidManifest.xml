@@ -13,7 +13,7 @@
 
         <activity
             android:name=".GalleryActivity"
-            android:theme="@style/AppTheme.FullScreen" />
+            android:theme="@style/ImageTabTheme.FullScreen" />
     </application>
 
 </manifest>
