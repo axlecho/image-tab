@@ -111,8 +111,12 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
         mAction = intent.getAction();
         mFilename = intent.getStringExtra(KEY_FILENAME);
         mUri = intent.getData();
-        mGalleryInfo = intent.getParcelableExtra(KEY_GALLERY_INFO);
+        mGalleryInfo = getInfo(intent);
         buildProvider();
+    }
+
+    protected  ImageTabInfo getInfo(Intent intent) {
+        return intent.getParcelableExtra(KEY_GALLERY_INFO);
     }
 
     protected void buildProvider() {
