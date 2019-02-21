@@ -776,7 +776,8 @@ public final class SpiderQueen implements Runnable {
             if (DEBUG_LOG) {
                 Log.d(TAG, "[sq] img url " + mGalleryInfo.imgs[index]);
             }
-            return mGalleryInfo.imgs[index];
+            // return mGalleryInfo.imgs[index];
+            return mGalleryInfo.getImageUrl(index);
         }
 
         // false for stop

@@ -31,6 +31,10 @@ public class ImageTabInfo implements Parcelable {
 //        in.readStringArray(this.imgs);
     }
 
+    public String getImageUrl(int index) {
+        return imgs[index];
+    }
+
     public static final Creator<ImageTabInfo> CREATOR = new Creator<ImageTabInfo>() {
 
         @Override
