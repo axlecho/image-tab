@@ -54,7 +54,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
     private String mFilename;
     private Uri mUri;
     private int mPage;
-    private ImageTabInfo mGalleryInfo;
+    protected ImageTabInfo mGalleryInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,7 +102,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
         findViewById(R.id.btn_rotate).setOnClickListener(this);
     }
 
-    private void onInit() {
+    protected void onInit() {
         Intent intent = getIntent();
         if (intent == null) {
             return;
@@ -115,7 +115,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView.Li
         buildProvider();
     }
 
-    private void buildProvider() {
+    protected void buildProvider() {
         if (mGalleryProvider != null) {
             return;
         }
